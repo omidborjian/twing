@@ -999,6 +999,7 @@ return module.exports;
 
     ensureToStringAllowed(obj: any) {
         if (this.isSandboxed() && typeof obj === 'object') {
+            if(obj)
             this.sandboxPolicy.checkMethodAllowed(obj, 'toString');
         }
 

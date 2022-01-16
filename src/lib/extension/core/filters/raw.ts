@@ -8,5 +8,5 @@ import {TwingMarkup} from "../../../markup";
  * @return {Promise<string>}
  */
 export function raw(string: string | TwingMarkup): Promise<string> {
-    return Promise.resolve(string.toString());
+    return Promise.resolve(string ? string.toString() : '');
 }

@@ -89,7 +89,7 @@ export class TwingSandboxSecurityPolicy implements TwingSandboxSecurityPolicyInt
         }
 
         if (!allowed) {
-            throw new TwingSandboxSecurityNotAllowedMethodError(`Calling "${method}" method on a "${obj.constructor.name}" is not allowed.`);
+            throw new TwingSandboxSecurityNotAllowedMethodError(`Calling "${method}" method on a "${obj ? obj.constructor.name : 'null value'}" is not allowed.`);
         }
     }
 
@@ -105,7 +105,7 @@ export class TwingSandboxSecurityPolicy implements TwingSandboxSecurityPolicyInt
         }
 
         if (!allowed) {
-            throw new TwingSandboxSecurityNotAllowedPropertyError(`Calling "${property}" property on a "${obj.constructor.name}" is not allowed.`);
+            throw new TwingSandboxSecurityNotAllowedPropertyError(`Calling "${property}" property on a "${obj ? obj.constructor.name : 'null value'}" is not allowed.`);
         }
     }
 }
