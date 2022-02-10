@@ -1,8 +1,7 @@
 import {TwingEnvironmentNode} from "../../../src/lib/environment/node";
 import TestBase from "./TestBase";
-
+/*
 const {resolve, relative} = require('path');
-const finder = require('fs-finder');
 
 let directory = resolve('test/tests/integration/fixtures');
 
@@ -22,3 +21,4 @@ for (let file of files) {
     }
 }
 
+*/

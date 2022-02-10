@@ -1,7 +1,7 @@
 const {resolve, relative} = require('path');
 const {Readable} = require('stream');
-const finder = require('fs-finder');
-
+//const finder = require('fs-finder');
+/*
 let directory = resolve('test/tests/browser/dist/test/tests/integration/fixtures');
 
 let files = finder.from(directory).findFiles('*.js');
@@ -28,3 +28,5 @@ const stream = new Readable();
 stream.push(data.join('\n'));
 stream.push(null);
 stream.pipe(process.stdout);
+
+*/
